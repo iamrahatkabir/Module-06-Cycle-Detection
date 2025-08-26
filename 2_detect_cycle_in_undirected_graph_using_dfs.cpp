@@ -43,7 +43,11 @@ int main()
     memset(parent, -1, sizeof(parent));
 
     cycle = false;
-    dfs(0);
+    for(int i = 0; i < n; i++)
+    {
+        if(!visited[i])
+            dfs(i);
+    }
 
     for(int i = 0; i < n; i++)
     {
