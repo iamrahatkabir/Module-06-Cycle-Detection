@@ -1,6 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Input
+6 5
+0 1
+1 2
+2 3
+3 0
+4 5
+*/
+
 vector<int> adj_list[105];
 bool visited[105];
 int parent[105];
